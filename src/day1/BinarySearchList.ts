@@ -4,6 +4,7 @@ export default function bs_list(haystack: number[], needle: number): boolean {
 
     while (low < high) {
         const mid = Math.floor((high + low) / 2);
+
         if (haystack[mid] === needle) {
             return true;
         }
